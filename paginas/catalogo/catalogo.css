@@ -6,8 +6,8 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      background: #111;
-      color: #fff;
+      background: #3a3737;
+      color: #252323;
     }
 
     /* HEADER */
@@ -16,7 +16,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px 40px;
-      background: #000;
+      background: #050505;
     }
 
     header img {
@@ -40,88 +40,12 @@
       color: gold;
     }
 
-    /* BANNER con carrusel */
-    #prin{
-        width: 100%;
-    }
-    .banner {
-      height: 70vh;
-      position: relative;
-      overflow: hidden;
-    }
+    
 
-    .slides {
-      display: flex;
-      width: 50%; /* 4 imágenes */
-      height: 100%;
-      animation: slide 20s infinite;
-    }
 
-    .slide {
-      position: relative;
-      flex: 1 0 100%;
-      height: 100%;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Texto encima de las imagenes */
-    .slide .banner-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 2;
-      color: white;
-      background: rgba(0,0,0,0.5);
-      padding: 20px 40px;
-      border-radius: 10px;
-    }
-
-    .banner-content h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    .banner-content button {
-      padding: 12px 25px;
-      font-size: 1rem;
-      background: gold;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .banner-content button:hover {
-      background: darkgoldenrod;
-    }
-
-    /* Animación automática (4 imágenes) */
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      20% { transform: translateX(0); }
-
-      25% { transform: translateX(-100%); }
-      45% { transform: translateX(-100%); }
-
-      50% { transform: translateX(-200%); }
-      70% { transform: translateX(-200%); }
-
-      75% { transform: translateX(-300%); }
-      95% { transform: translateX(-300%); }
-
-      100% { transform: translateX(0); }
-    }
-
-    /* PRODUCTOS DESTACADOS */
+    /* PRODUCTOS  */
     .productos {
-      padding: 60px 40px;
+      padding: 50px 50px;
       background: #181818;
       text-align: center;
 
@@ -136,15 +60,22 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+      gap: 10px;
 }
 
     .card {
-      background: #222;
-      padding: 20px;
+      background: #fffefe;
+      width: 200px;
+      color:#000;
+      padding: 30px;
       border-radius: 12px;
       text-align: center;
-      transition: transform 0.3s;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
     }
 
     .card:hover {
@@ -152,9 +83,9 @@
     }
 
     .card img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      width: 50%;
+      border-radius: 10px;
+      margin-bottom: 5px;
     }
 
     .card h3 {
@@ -167,7 +98,7 @@
 
     .card button {
       padding: 10px 20px;
-      background: gold;
+      background: rgba(218, 140, 23, 0.973);
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -190,16 +121,3 @@
     }
 
     
-/* Tablet */
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 por fila */
-  }
-}
-
-/* Celular */
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr; /* 1 por fila */
-  }
-}

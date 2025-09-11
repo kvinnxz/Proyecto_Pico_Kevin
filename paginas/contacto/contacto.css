@@ -79,7 +79,7 @@
   /* Cuando el campo está enfocado */
   .formulario input:focus,
   .formulario textarea:focus {
-    border-color: gold;
+    border-color: rgb(42, 230, 42);
   }
 
   /* Validación visual */
