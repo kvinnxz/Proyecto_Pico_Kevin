@@ -135,7 +135,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
 }
 
@@ -152,8 +152,7 @@
     }
 
     .card img {
-      width: 90%;
-      height: 60%;
+      width: 100%;
       border-radius: 8px;
       margin-bottom: 15px;
     }
