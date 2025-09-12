@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/paginas/catalogo/relojes/reloj2/reloj.css">
-  <title>LuxTime</title>
+  <title>Detalles</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -19,11 +19,69 @@
       </ul>
     </nav>
   </header>
-  <!-- CATALOGO -->
+<!-- ================= DETALLE DEL PRODUCTO ================= -->
+<section class="producto-detalle">
+  <h2>Detalle del Producto</h2>
 
-  <section class="productos">
+  <div class="producto-main">
+    <!-- Imagen principal con zoom -->
+    <div class="producto-imagen">
+      <img src="/images/catalogo/IWC Portugieser Annual.png" alt="IWC Portugieser Annual Calendar">
+    </div>
 
-  
+    <!-- Información -->
+    <div class="producto-info">
+      <h3>IWC Portugieser Annual Calendar</h3>
+      <p>
+        El IWC Portugieser Annual Calendar es un reloj elegante que combina 
+        la tradición relojera con complicaciones modernas. Presenta una 
+        disposición clásica, una legibilidad excepcional y una mecánica de alta precisión.
+      </p>
+
+      <!-- Descripción técnica -->
+      <ul class="descripcion-tecnica">
+        <li><b>Material:</b> Caja de acero inoxidable</li>
+        <li><b>Tamaño:</b> 44.2 mm de diámetro</li>
+        <li><b>Peso:</b> 150 g</li>
+        <li><b>Movimiento:</b> Calibre automático 52850</li>
+        <li><b>Reserva de marcha:</b> 7 días</li>
+        <li><b>Resistencia al agua:</b> 30 m</li>
+        <li><b>Complicación:</b> Calendario anual (mes, fecha, día)</li>
+      </ul>
+
+      <!-- Personalización -->
+      <div class="personalizacion">
+        <h4>Opciones de Personalización</h4>
+        
+        <label for="grabado">Grabado:</label>
+        <select id="grabado">
+          <option>Sin grabado</option>
+          <option>Iniciales</option>
+          <option>Nombre completo</option>
+          <option>Mensaje personalizado</option>
+        </select>
+
+        <label for="correa">Correa:</label>
+        <select id="correa">
+          <option>Cuero negro</option>
+          <option>Cuero marrón</option>
+          <option>Aligátor azul</option>
+          <option>Edición especial personalizada</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Productos relacionados -->
+  <div class="productos-relacionados">
+    <h3>Productos Relacionados</h3>
+    <div class="carousel">
+      <div class="item"><img src="/images/catalogo/rolex cellini.png" alt="Reloj relacionado 1"></div>
+      <div class="item"><img src="/images/catalogo/Audemars Piguet Millenary.png" alt="Reloj relacionado 2"></div>
+      <div class="item"><img src="/images/catalogo/Panerai Radiomir.png" alt="Reloj relacionado 3"></div>
+    </div>
+  </div>
+</section>
   <!-- FOOTER -->
   <footer>
     <p>© 2025 LuxTime | Todos los derechos reservados</p>

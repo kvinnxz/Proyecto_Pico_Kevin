@@ -40,65 +40,134 @@
       color: rgba(218, 140, 23, 0.973);
     }
 
-    
-
-
-    /* PRODUCTOS  */
-    .productos {
-      padding: 50px 50px;
-      background: #181818;
-      text-align: center;
-
-    }
-
-    .productos h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: rgba(218, 140, 23, 0.973);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
+    /* ===== DETALLE DEL PRODUCTO ===== */
+.producto-detalle {
+  padding: 60px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
 }
 
-.card {
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
+.producto-detalle h2 {
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 40px;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+/* Layout principal */
+.producto-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
 
-    .card img {
-      width: 50%;
-      border-radius: 10px;
-      margin-bottom: 5px;
-    }
+/* Imagen principal */
+.producto-imagen {
+  flex:  1px;
+  overflow: hidden;
+  border-radius: 12px;
+}
 
-    .card h3 {
-      margin-bottom: 10px;
-    }
+.producto-imagen img {
+  width: 90%;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+}
 
-    .card p {
-      margin-bottom: 15px;
-    }
+.producto-imagen img:hover {
+  transform: scale(1.2);
+}
 
-    .card button {
-      padding: 10px 20px;
-      background: rgba(218, 140, 23, 0.973);
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      justify-content: flex-end;
-    }
+/* Info producto */
+.producto-info {
+  flex: 1 1 400px;
+  text-align: left;
+}
 
+.producto-info h3 {
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.descripcion-tecnica {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.descripcion-tecnica li {
+  margin: 8px 0;
+}
+
+/* Personalización */
+.personalizacion {
+  margin-top: 20px;
+}
+
+.personalizacion h4 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.personalizacion label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.personalizacion select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #222;
+  color: #fff;
+  outline: none;
+}
+
+/* Productos relacionados */
+.productos-relacionados {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.productos-relacionados h3 {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+/* Carrusel horizontal */
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;  
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.carousel .item {
+  min-width: 250px;
+  flex: none;
+}
+
+.carousel img {
+  width: 90%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+    
     /* FOOTER */
     footer {
       text-align: center;
@@ -112,5 +181,3 @@
       color: rgba(218, 140, 23, 0.973);
       text-decoration: none;
     }
-
-    
