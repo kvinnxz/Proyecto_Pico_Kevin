@@ -300,14 +300,15 @@
 }
 
 .video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  justify-content: center; /* centra en horizontal */
+  flex-wrap: wrap;         /* permite que bajen si hay varios */
   gap: 20px;
-  justify-content: center;
 }
 
 .video-grid video {
-  width: 100%;
+  width: 450px;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
 }

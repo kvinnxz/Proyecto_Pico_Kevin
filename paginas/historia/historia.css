@@ -39,6 +39,65 @@
     nav a:hover {
       color: gold;
     }
+    /* ====== LÍNEA DEL TIEMPO ====== */
+.timeline-container {
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.timeline {
+  display: flex;
+  gap: 40px;
+}
+ 
+.event {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 220px;
+  box-shadow: 0 0 10px rgba(255,215,0,0.4);
+  transition: transform 0.3s;
+   word-wrap: break-word;     /* fuerza salto de línea si es necesario */
+  white-space: normal;       /* permite que el texto se divida */
+  overflow-wrap: break-word; /* asegura compatibilidad */
+}
+h2 {
+  color: gold ;
+}
+
+.event:hover {
+  transform: scale(1.05);
+}
+
+.event h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* ====== GALERÍA MOSAICO ====== */
+.gallery {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,215,0,0.3);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
     /* FOOTER */
     footer {
       text-align: center;
