@@ -16,7 +16,6 @@ Sitio web elegante para una tienda de relojes de lujo, con diseño responsivo y 
 - [Añadir Nuevas Imágenes](#-añadir-nuevas-imágenes)  
 - [Despliegue](#-despliegue)  
 - [Autor](#-autor)  
-- [Licencia](#-licencia)
 
 ---
 
@@ -74,62 +73,33 @@ git clone https://github.com/kvinnxz/Proyecto_Pico_Kevin.git
 3. Abre el archivo `index.html` en tu navegador.
 
 ## 📁 Estructura de Archivos
-Proyecto_Pico_Kevin/
-├── Codigos/
-│   ├── index.html          # Página principal
-│   ├── style.css           # Estilos principales
-│   └── paginas/
-│       ├── catalogo/
-│       │   ├── catalogo.html  # Página de catálogo (pendiente)
-│       │   └── [estilos.css]  # Estilos del catálogo (pendiente)
-│       ├── historia/
-│       │   ├── historia.html  # Página de historia
-│       │   └── historia.css   # Estilos de la página de historia
-│       └── contacto/
-│           ├── contacto.html  # Página de contacto
-│           └── contacto.css   # Estilos de la página de contacto
-├── images/
-│   ├── home/               # Imágenes para la página principal
-│   ├── destacados/         # Imágenes de productos destacados
-│   ├── historia/           # Imágenes para la sección de historia
-│   └── videos/             # Videos corporativos
-└── README.md               
+    Proyecto_Pico_Kevin/
+    ├── Codigos/
+    │   ├── index.html          # Página principal
+    │   ├── style.css           # Estilos principales
+    │   └── paginas/
+    │       ├── catalogo/
+    │       │   ├── catalogo.html  # Página de catálogo (pendiente)
+    │       │   └── [estilos.css]  # Estilos del catálogo (pendiente)
+    │       ├── historia/
+    │       │   ├── historia.html  # Página de historia
+    │       │   └── historia.css   # Estilos de la página de historia
+    │       └── contacto/
+    │           ├── contacto.html  # Página de contacto
+    │           └── contacto.css   # Estilos de la página de contacto
+    ├── images/
+    │   ├── home/               # Imágenes para la página principal
+    │   ├── destacados/         # Imágenes de productos destacados
+    │   ├── historia/           # Imágenes para la sección de historia
+    │   └── videos/             # Videos corporativos
+    └── README.md               
 
-## Modificar productos
-Para actualizar los productos destacados, edita la sección en index.html:
-<div class="card">
-  <img src="/images/destacados/nuevo-reloj.png" alt="Nuevo Reloj">
-  <h3>Nombre del Nuevo Reloj</h3>
-  <p>$999 USD</p>
-  <p>★★★★★</p>
-  <a href="/paginas/catalogo/catalogo.html">
-    <button>Ver Detalles</button>
-  </a>
-</div>
-
-## 🖼️Añadir Nuevas Imágenes
-Para agregar más imágenes al carrusel principal:
-
-<div class="slide">
-  <img src="/images/home/nueva-imagen.png" alt="Nueva Imagen">
-  <div class="banner-content">
-    <h1>Elegancia en Cada Segundo</h1>
-    <a href="/paginas/catalogo/catalogo.html">
-      <button>Ver Catálogo</button>
-    </a>
-  </div>
-</div>
-Asegúrate de ajustar la animación CSS para el número correcto de imágenes:
-
-@keyframes slide {
-  /* Ajustar los porcentajes según el número de imágenes */
-}
 
 ## 🚀 Despliegue
 
 # Netlify
-👉 [Ver Portafolio en línea](https://68c3f63b090c244b250f1818--deluxe-dasik-f4e164.netlify.app/)
+👉 [Ver pagina en línea](https://68c3f63b090c244b250f1818--deluxe-dasik-f4e164.netlify.app/)
 
 # 👨‍💻 Autor
-Kevin - 👉 [kvinnxz](@kvinnxz/)
+Kevin - 👉 [@kvinnxz](https://github.com/kvinnxz/)
 
