@@ -11,9 +11,7 @@ Sitio web elegante para una tienda de relojes de lujo, con diseño responsivo y 
 - [Estructura del Sitio](#️-estructura-del-sitio)  
 - [Tecnologías Utilizadas](#️-tecnologías-utilizadas)  
 - [Instalación y Uso](#-instalación-y-uso)  
-- [Estructura de Archivos](#-estructura-de-archivos)  
-- [Personalización](#-personalización)  
-- [Añadir Nuevas Imágenes](#-añadir-nuevas-imágenes)  
+- [Estructura de Archivos](#-estructura-de-archivos)   
 - [Despliegue](#-despliegue)  
 - [Autor](#-autor)  
 
@@ -101,7 +99,7 @@ git clone https://github.com/kvinnxz/Proyecto_Pico_Kevin.git
 ## 🚀 Despliegue
 
 # Netlify
-👉 [Ver pagina en línea](https://68c3f63b090c244b250f1818--deluxe-dasik-f4e164.netlify.app/)
+👉 [Ver pagina en línea](https://loquacious-pavlova-ee6147.netlify.app/)
 
 # 👨‍💻 Autor
 Kevin - 👉 [@kvinnxz](https://github.com/kvinnxz/)
