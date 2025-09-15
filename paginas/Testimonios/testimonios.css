@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #111;
+    color: #fff;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #000;
+  }
+
+  header img {
+    height: 70px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: gold;
+  }
+
+  /* BANNER con carrusel */
+  #titulo{
+    color: gold;
+  }
+  #prin{
+      width: 90%;
+  }
+  .banner {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+
+  }
+
+  .slides {
+    display: flex;
+    width: 50%; /* 4 imágenes */
+    height: 100%;
+    animation: slide 20s infinite;
+  }
+
+  .slide {
+    position: relative;
+    flex: 1 0 100%;
+    height: 100%;
+  }
+
+  .slide img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  /* Texto encima de las imagenes */
+  .slide .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+
+  .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    max-width: 768px
+    
+  }
+
+
+  /* Animación automática (4 imágenes) */
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+
+    100% { transform: translateX(0); }
+  }
+   /* FOOTER */
+   footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: gold;
+    text-decoration: none;
+  }
+
+  
+/* Tablet */
+@media (max-width: 768px) {
+.banner {
+  grid-template-columns: repeat(2, 1fr); /* 2 por fila */
+}
+}
+
+/* Celular */
+@media (max-width: 480px) {
+.banner{
+  grid-template-columns: 1fr; /* 1 por fila */
+}
+}
