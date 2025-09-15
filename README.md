@@ -49,7 +49,7 @@ El sitio web consta de 4 páginas principales:
 | **Catálogo (catalogo.html)** | Listado completo de productos |
 | **Historia (historia.html)** | Información histórica de la empresa con línea de tiempo y galería |
 | **Contacto (contacto.html)** | Formulario de contacto e información de la empresa |
-
+| **Testimonio (testimonios.html)** | Carrucel de imagenes con testimonios de clientes |
 ---
 
 ## 🛠️ Tecnologías Utilizadas
@@ -84,9 +84,12 @@ git clone https://github.com/kvinnxz/Proyecto_Pico_Kevin.git
     │       ├── historia/
     │       │   ├── historia.html  # Página de historia
     │       │   └── historia.css   # Estilos de la página de historia
-    │       └── contacto/
-    │           ├── contacto.html  # Página de contacto
-    │           └── contacto.css   # Estilos de la página de contacto
+            |── contacto/
+    │       |    ├── contacto.html  # Página de contacto
+    │       |    └── contacto.css   # Estilos de la página de contacto
+    │       └── testimonios/
+    │           ├── testimonios.html  # Página de testimonios
+    │           └── testimonios.css   # Estilos de la página de testimonios
     ├── images/
     │   ├── home/               # Imágenes para la página principal
     │   ├── destacados/         # Imágenes de productos destacados
